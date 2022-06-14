@@ -70,6 +70,10 @@ body {
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    @include mobile{
+        width: 75vw;
+    }
 }
 
 @keyframes fadeInAnimation {
@@ -81,8 +85,6 @@ body {
         opacity: 1;
     }
 }
-
-
 h2 {
     font-family: 'pattaya';
     font-size: 3em;

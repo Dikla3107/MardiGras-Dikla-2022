@@ -35,4 +35,27 @@
         text-decoration: none;
         color: inherit;
     }
+    .hamburger{
+        width: 100vw;
+        height: 38px;
+        background-color: $navbgc;
+        color: $navcolor;
+        font-size: 1.5em;
+        line-height: 2;
+        display: none;
+    }
+    @include mobile{
+        .hamburger{
+            display: flex;
+        }
+        .hamburger ul li a{
+            display: none;
+            width: 480px;
+        }
+        .hamburger:hover ul li a{
+            display: flex;
+            font-display: column;
+            flex-wrap: wrap;
+        }
+    }
 }

@@ -114,7 +114,11 @@ body {
         line-height: 1.1;
         font-size: 1.3em;
         padding: 10px;
-
+    }
+    @include mobile{
+        line-height: 1;
+        font-size: 1.2em;
+        padding: 10px;
     }
 }
 .active,
