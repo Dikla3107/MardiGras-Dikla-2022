@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $navbgc;
+    min-height: 100vh;
+}
+
+.mainHeader {
+    @extend %header
+}
+
+.bgF {
+    background-image: url('../pics//ZJ5EW4COCBOQZAKEH4XQTFTUGM.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 830px;
+}
+
+.cound {
+    width: 100vw;
+    height: 100px;
+    background-color: $navbgc;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .countDownValues {
+        width: 25vw;
+        text-align: center;
+        font-family: 'pattaya';
+        font-size: 30px;
+        color: #9453A6;
+    }
+
+    .textcound {
+        width: 25vw;
+        font-family: 'pattaya';
+        text-align: center;
+        font-size: 20px;
+        color: #eecc0f;
+    }
+}
+
+.fContainer {
+    width: 75vw;
+    margin: 40px auto;
+    border: 2px solid black;
+    border-radius: 4px;
+    position: relative;
+}
+
+.accordion {
+    height: 70px;
+    background-color: $navcolor;
+    font-family: 'Pattaya', serif;
+    font-size: 1.7rem;
+    color: $navbgc;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    @include tablet {
+        line-height: 1.1;
+        font-size: 1.3em;
+        padding: 10px;
+
+    }
+}
+
+.accordion2 {
+    height: 70px;
+    background-color: #e8c70b;
+    font-family: 'Pattaya', serif;
+    font-size: 1.7rem;
+    color: $navbgc;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    @include tablet {
+        line-height: 1.1;
+        font-size: 1.3em;
+        padding: 10px;
+    }
+}
+
+.accordion3 {
+    height: 70px;
+    background-color: #00b52f;
+    font-family: 'Pattaya', serif;
+    font-size: 1.7rem;
+    color: $navbgc;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    line-height: 0.9
+    ;
+    @include tablet{
+        line-height: 1.1;
+        font-size: 1.3em;
+        padding: 10px;
+
+    }
+}
+.active,
+.accordion:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.active,
+.accordion2:hover {
+    background-color: #ccc;
+    color: black;
+
+}
+
+.active,
+.accordion3:hover {
+    background-color: #ccc;
+    color: black;
+
+}
+.panel {
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
+    background-color: $navbgc;
+    display: none;
+    overflow: hidden;
+    border: 0px 0px 2px 0px solid black;
+}
+.panel p{
+    line-height: 2;
+    padding-bottom: 20px;
+
+}
+.fotter {
+    width: 100vw;
+    height: 70px;
+    background-color: $navbgc;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.205);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotter p {
+    color: $navcolor;
+
+}
