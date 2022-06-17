@@ -18,14 +18,15 @@
 </head>
 
 <body>
-    <!--     Header -->
+    <!-- Header -->
     <div class="mainHeader">
         <div class="hcontain">
             <div class="header1">
-                <div class="hamburger">&nbsp; &#9776;</div>
-                <ul>
+                <div id="hamburger" class="hamburger">&nbsp; &#9776;</div>
+                <h2>MardiGras <span class="year"> 20<span class="year2">23</span></span></h2>
+                <ul class="ul" id="ul">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./theFestival.html">The carnival</a></li>
+                    <li><a href="./theFestival.html">The Carnival</a></li>
                     <li><a href="./Gallery.html">Gallery</a></li>
                     <li><a href="./FAQ.html">FAQ</a></li>
                     <li><a href="./Contact.html">Contact</a></li>
@@ -46,14 +47,15 @@
         <div class="textcound">Min</div>
         <div class="textcound">Sec</div>
     </div>
-
+    <!-- sponsers -->
     <div class="sponser">
+        <h3 class="h3-sponsers">Our <span class="h3-span">Sponsers</span></h3>
         <div class="containerG">
             <div class="item item2">
                 <div class="modcard" onclick="NewTabmod()">
                     <img src="./pics/MOD.jpeg" class="modcard-img-top" class="cardimg" alt="mod">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">MOD</h5>
+                        <h5 class="modcard-title" id="mod">MOD</h5>
                         <p class="modcard-text">The World Famous Museum of Death was founded in June, 1995 when JD Healy
                             and Cathee
                             Shultz decided to fill the void in death education in this country and made death their
@@ -78,7 +80,7 @@
                 <div class="modcard" onclick="NewTabtrc()">
                     <img src="./pics/TRC copy.png" class="modcard-img-top" alt="TRC">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">The Ritz Carlton Hotel</h5>
+                        <h5 class="modcard-title" id="trh">The Ritz Carlton Hotel</h5>
                         <p class="modcard-text">Within New Orleans’ French Quarter on Canal Street, this four-star
                             hotel honors the city through its services and décor
                         </p>
@@ -89,7 +91,7 @@
                 <div class="modcard" onclick="NewTabwa()">
                     <img src="./pics/walkons-logo.jpg" class="modcard-img-top" alt="Walks on">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">Walk on's</h5>
+                        <h5 class="modcard-title" id="wo">Walk on's</h5>
                         <p class="modcard-text">There’s really no better way to describe the uniqueness of Walk-On’s
                             Sports Bistreaux. We start every dish from scratch and use fresh ingredients to bring our
                             mouthwatering, Cajun cuisine to life in every restaurant.
@@ -102,7 +104,7 @@
                 <div class="modcard" onclick="NewTabpp()">
                     <img src="./pics/PremiunParking.jpg" class="modcard-img-top" alt="PP">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">Primume Parking</h5>
+                        <h5 class="modcard-title" id="pp">Primume Parking</h5>
                         <p class="modcard-text">The best Premium Parking New orleanse have to offer to all the
                             participents enjoining the Carnival. From long parking time with no extra fees to a safe
                             parking are with high securing levels. Huse and wide area for all participents
@@ -115,14 +117,13 @@
                 <div class="modcard" onclick="NewTablcm()">
                     <img src="./pics/LCM.png" class="modcard-img-top" alt="mod">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">Children's Museum</h5>
+                        <h5 class="modcard-title" id="cm">Children's Museum</h5>
                         <p class="modcard-text">
                             </h5><br>When you make a child’s potential visible,
                             wonderful things
                             happen. So
                             we created a place where kids use play, shared exploration, and conversation to connect with
-                            the people and world around them. A place where kids can be the amazing humans they are. A
-                            place where wonderful things happen daily.
+                            the people and world around them. A place where kids can be the amazing humans they are. 
                         </p>
                     </div>
                 </div>
@@ -132,11 +133,9 @@
                 <div class="modcard" onclick="NewTabHM()">
                     <img src="./pics/huntedmuseum.jpeg" class="modcard-img-top" alt="mod">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">Hunted Museum</h5>
+                        <h5 class="modcard-title" id="hm">Hunted Museum</h5>
                         <p class="modcard-text">through Paranormal displays and come spirit shop in the Voodoo
-                            Pharmacy to get your personal metaphysical prescription filled! Explore the voodoo occult
-                            Paranormal Haunted museum & hear the haunted history behind New Orleans Ghosts on your
-                            visit.
+                            Pharmacy to get your personal metaphysical prescription filled! 
                         </p>
                     </div>
                 </div>
@@ -145,7 +144,7 @@
                 <div class="modcard" onclick="NewTabAH()">
                     <img src="./pics/Ace hotel.jpeg" class="modcard-img-top" alt="mod">
                     <div class="modcard-body"><br>
-                        <h5 class="modcard-title">The Ace Hotel</h5>
+                        <h5 class="modcard-title" id="ah">The Ace Hotel</h5>
                         <p class="modcard-text">Ace hotel is one of the modern and coutique hotels in New Orleanse which
                             provide the best hotel experience with not spenfing to much money per night! Come visit us!
                         </p>
@@ -257,8 +256,8 @@
     <div class="fotter">
         <p>&#169; Dikla's Hamburger Project HTML + CSS + JS 2022</p>
     </div>
-    <script src="./JS/jsHome.js">
-    </script>
+    <script src="./JS/jsHome.js"></script>
+    <script src="./JS/nav.js"></script>
 
 </body>
 

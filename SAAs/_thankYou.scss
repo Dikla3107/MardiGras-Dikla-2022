@@ -38,7 +38,7 @@ body {
     text-align: center;
     font-family: 'pattaya';
     font-size: 30px;
-    color: #9453A6;
+    color: $navcolor;
 }
 
 .textcound {
@@ -46,7 +46,7 @@ body {
     font-family: 'pattaya';
     text-align: center;
     font-size: 20px;
-    color: #eecc0f;
+    color: $yellow;
 }
 
 
@@ -55,21 +55,21 @@ body {
     font-family: 'pattaya';
     text-align: center;
     font-size: 20px;
-    color: #eecc0f;
+    color: $yellow;
 }
 
 .thanks-container {
     width: 100vw;
-    height: 150px;
+    height: auto;
 }
 
 .thanks {
     margin-top: 70px;
     font-family: 'Pattaya';
-    color: #eecc0f;
+    color: $yellow;
     font-size: 5em;
     text-align: center;
-    text-shadow: 2px 2px 2px#00b52f;
+    text-shadow: 2px 2px 2px $green;
     animation: wiggle 2s;
 }
 
@@ -110,12 +110,12 @@ body {
 
 .backContainer {
     width: 100vw;
-    margin: 30px;
+    margin: 0 auto;
 }
 
 .backContainer p {
     font-size: 1.8em;
-    color: #9453A6;
+    color: $navcolor;
     text-align: center;
     font-family: 'Roboto';
     font-weight: 900;
@@ -135,4 +135,10 @@ body {
 
 .fotter p {
     color: $navcolor;
+
+    @include mobile {
+        margin-top: 50px;
+        line-height: 1.5;
+    }
+
 }

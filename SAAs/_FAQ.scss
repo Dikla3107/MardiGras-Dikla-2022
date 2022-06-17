@@ -37,7 +37,7 @@ body {
         text-align: center;
         font-family: 'pattaya';
         font-size: 30px;
-        color: #9453A6;
+        color: $navcolor;
     }
 
     .textcound {
@@ -45,7 +45,7 @@ body {
         font-family: 'pattaya';
         text-align: center;
         font-size: 20px;
-        color: #eecc0f;
+        color: $yellow;
     }
 }
 
@@ -79,7 +79,7 @@ body {
 
 .accordion2 {
     height: 70px;
-    background-color: #e8c70b;
+    background-color: $yellow;
     font-family: 'Pattaya', serif;
     font-size: 1.7rem;
     color: $navbgc;
@@ -98,7 +98,7 @@ body {
 
 .accordion3 {
     height: 70px;
-    background-color: #00b52f;
+    background-color: $green;
     font-family: 'Pattaya', serif;
     font-size: 1.7rem;
     color: $navbgc;
@@ -168,5 +168,10 @@ body {
 
 .fotter p {
     color: $navcolor;
+
+    @include mobile {
+        margin-top: 50px;
+        line-height: 1.5;
+    }
 
 }

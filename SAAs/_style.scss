@@ -7,55 +7,104 @@
     .header1 {
         width: 100vw;
         height: 80px;
-        justify-content: center;
-        align-items: center;
-        position:fixed;
+        position: fixed;
         background-color: $navbgc;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.416);
         z-index: 10;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+            height: 45px;
+            
+        }
+
+        h2 {
+            font-family: 'Pattaya';
+            color: $navcolor;
+            font-size: 1.2em;
+            margin: -45px;
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
+            .year {
+                color: $yellow;
+            }
+            .year2 {
+                color: $green;
+            }
+        }
     }
+
+    .ul {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+            display: none;
+            flex-direction: column;
+            background-color: $navbgc;
+            height: 500px;
+            width: 120px;
+            box-shadow: 2px 2px 2px $navcolor;
+        }
+    } 
 
     li {
         width: 20vw;
         line-height: 2.3;
-        color: #9453A6;
+        color: $navcolor;
         list-style-type: none;
         font-family: 'pattaya';
-        font-size: 1.5rem;
-        padding: 10px;
+        font-size: 1.5em;
+        padding: 15px;
         float: left;
         text-align: center;
-        flex-grow: 0;
-    }
+        @include mobile {
+            padding: -90px;
+            margin-top: 30px;
+            margin-left: 10px;
+            line-height: 1;
+            color: $navcolor;
 
+        }
+    }
+    ul li:hover{
+        transform:  scale(1.1);
+        transition: 0.3s;
+    }
+    }
+    
     table li a {
         align-items: center;
     }
-    a, a:focus, a:active {
+
+    a,
+    a:focus,
+    a:active {
         text-decoration: none;
         color: inherit;
     }
-    .hamburger{
-        width: 100vw;
+
+    .hamburger {
+        width: 10vw;
         height: 38px;
         background-color: $navbgc;
         color: $navcolor;
         font-size: 1.5em;
         line-height: 2;
         display: none;
-    }
-    @include mobile{
-        .hamburger{
-            display: flex;
-        }
-        .hamburger ul li a{
-            display: none;
-            width: 480px;
-        }
-        .hamburger:hover ul li a{
-            display: flex;
-            font-display: column;
-            flex-wrap: wrap;
+
+        @include mobile {
+            display: block;
+            line-height: 1.7;
+
+            .hamburger:hover+ul+li+a{
+                display: block;
+            }
         }
     }
-}
+
+    

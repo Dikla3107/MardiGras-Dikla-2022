@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --success: #2c7;
     --error: #e43;
@@ -22,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 830px;
+    height: 830px;
 }
 
 .cound {
@@ -51,28 +52,31 @@ body {
     font-family: 'pattaya';
     text-align: center;
     font-size: 20px;
-    color: #eecc0f;
+    color: $yellow;
 }
 
 .contactContainer {
     width: 100vw;
     background-color: $navbgc;
-    height: 900px;
-    padding: 90px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
 }
 
-.container {
-    width: 50vw;
+.form-container {
+    width: 500px;
+    height: auto;
     margin: 0 auto;
-    background-color: #eecc0f;
+    background-color: $yellow;
     border-radius: 15px;
+    display: flex;
     box-shadow: 7px 7px 7px #00b53080;
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
     @include mobile{
-        width: 75vw;
+        width: 80vw;
     }
 }
 
@@ -85,12 +89,17 @@ body {
         opacity: 1;
     }
 }
+
 h2 {
     font-family: 'pattaya';
     font-size: 3em;
     text-align: center;
     color: $navcolor;
-    padding: 40px;
+    padding: 20px;
+    @include mobile{
+        font-size: 1.9em;
+        padding: 15px;
+    }
 }
 
 p {
@@ -110,21 +119,19 @@ p {
 }
 
 .label {
-    text-align: center;
     display: block;
     font-family: 'pattaya';
-    color: #00b52f;
+    color: $green;
     font-size: 1.5em;
-    width: 100%;
     margin-top: -10px;
-
-        @include tablet{
-            display: none;
-        }
+    text-align: center;
+    @include tablet {
+        display: none;
+    }
 }
 
 .formControl input {
-    border: 2px solid rgb(114, 113, 113);
+    border: 2px solid $navbgc;
     background-color: $navbgc;
     border-radius: 4px;
     display: block;
@@ -132,6 +139,13 @@ p {
     width: 50%;
     margin: 0 auto;
     font-size: 1.1rem;
+    text-align: center;
+    @include mobile{
+        width: 250px;
+    }
+}
+.formControl.error{
+    text-align: center;
 }
 
 .formControl input:focus {
@@ -150,25 +164,24 @@ p {
 .formControl small {
     color: var(--error);
     visibility: hidden;
-
 }
 
 .formControl.error small {
     visibility: visible;
 }
 
-input[type=submit] {
-    border: 2px solid #eecc0f;
+
+.submit {
+    border: 2px solid $yellow;
     border-radius: 4px;
-    color: #eecc0f;
+    color: $yellow;
     background-color: $navcolor;
     display: block;
     font-size: 1rem;
     margin: 0 auto;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 15px;
     width: 25%;
-    
 }
 
 .fotter {
@@ -184,4 +197,10 @@ input[type=submit] {
 
 .fotter p {
     color: $navcolor;
+
+    @include mobile {
+        margin-top: 50px;
+        line-height: 1.5;
+    }
+
 }
